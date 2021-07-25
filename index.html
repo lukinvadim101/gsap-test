@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/MotionPathPlugin.min.js"></script>
+</head>
+<body>
+  <h1>wooowwoowowowwwwrapperwwooowwoo</h1>
+  <div class="wwwrapper">
+    <div class="bg__wrapper"></div>
+    <div class="btn__wrapper">
+      <h2> 🦒🥒🎱 Пульт</h2>
+      <button class="play" >▶️</button>
+      <button class="pause" >⏸️</button>
+      <button class="resume">⏭️</button>
+      <button class="reverse">⏪</button>
+      <button class="restart">🔁</button>
+      <input type="range" min=0 max=100 value=0 oninput="tween.progress(this.value/100)">
+    </div>
+     <div class="selector__wrapepr">
+      <div class="selector"></div>
+      <div class="another_selector"></div>
+     </div>
+      <div class="earth__wrapper">
+        <img src="./earth.png" alt="earth-rrrrr" id="earth">
+      </div>
+
+      <div>
+
+        <svg width="12cm" height="6cm" viewBox="0 0 1200 600"
+            xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <title>Example quad01 - quadratic Bézier commands in path data</title>
+          <desc>Picture showing a "Q" a "T" command,
+                along with annotations showing the control points
+                and end points</desc>
+          <rect x="1" y="1" width="1198" height="598"
+                fill="none" stroke="blue" stroke-width="1" />
+
+          <path class="yourpath" d="M200,300 Q400,50 600,300 T1000,300"
+                fill="none" stroke="red" stroke-width="5"  />
+          <!-- End points -->
+          <g fill="black" >
+            <circle cx="200" cy="300" r="10"/>
+            <circle cx="600" cy="300" r="10"/>
+            <circle cx="1000" cy="300" r="10"/>
+          </g>
+          <!-- Control points and lines from end points to control points -->
+          <g fill="#888888" >
+            <circle cx="400" cy="50" r="10"/>
+            <circle cx="800" cy="550" r="10"/>
+          </g>
+          <path d="M200,300 L400,50 L600,300
+                  L800,550 L1000,300"
+                fill="none" stroke="#888888" stroke-width="2" />
+        </svg>
+      </div>
+        <div class="dinoball"></div>
+      </div>
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
